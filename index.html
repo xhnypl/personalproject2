@@ -8,65 +8,108 @@
             <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
             <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"> <!-- gradient & 3D effects -->
             <link rel="stylesheet" type="text/css" href="css/mine.css">
+            <title>Becky's Precious Stones</title>
         </head>
         <body>
             <div class="container">
-                <!-- nav tabs -->
-                <nav>
-                    <ul class="nav nav-tabs nav-justified">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#1st" data-toggle="tab">Item1</a></li>
-                        <li><a href="#2nd" data-toggle="tab">Item2</a></li>
-                        <li><a href="#3rd" data-toggle="tab">Item3</a></li>
-                    </ul>
+                <!-- navbar -->
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Becky's Precious Stones</a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="crystal.html">Crystal</a></li>
+                            <li><a href="jade.html">Jade</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </nav>
                 <br>
-                <!-- tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="1st">
-                        <a href="#">Buy A</a>
-                        <a href="#">Buy B</a>
-                        <a href="#">Buy C</a>
+
+                <!-- home page content -->
+                <div class="row">
+                    <div class="col-sm-1"></div> <!-- empty space -->
+                    <div class="col-sm-6">
+                        <a href="crystal.html" class="relative">
+                            <div class="jump"><h4>Conch Rock</h4></div>
+                            <img class="img-responsive" src="img/2.JPG">
+                        </a>
+                        <div id="crystalsale">
+                            <br><br><br><br>
+                            <h3>20% off crystal collection</h3>
+                        </div>
+                    
                     </div>
-                    <div class="tab-pane active" id="2nd">
-                        <a href="#">Buy A</a>
-                        <a href="#">Buy B</a>
-                        <a href="#">Buy C</a>
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <a href="#" class="relative">
+                                <div class="jump"><h4>Beeswax</h4></div>
+                                <img class="img-responsive" src="img/45.JPG">
+                            </a>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <a href="#" class="relative">
+                                <div class="jump"><h4>Brazilian Agate</h4></div>
+                                <img class="img-responsive" src="img/25.JPG">
+                            </a>
+                        </div>
                     </div>
-                    <div class="tab-pane active" id="3rd">
-                        <a href="#">Buy A</a>
-                        <a href="#">Buy B</a>
-                        <a href="#">Buy C</a>
+                    <div class="col-sm-1"></div> <!-- empty space -->
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <br><br><br>
                     </div>
                 </div>
-                <!-- home page contents -->
                 <div class="row">
-                    <div class="col-sm-5 box1">
-                        <a href="#"><img class="img-responsive" src="img/2.JPG"></a>  
+                    <div class="col-sm-1"></div> <!-- empty space -->
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <a href="#">
+                                <div class="jump"><h4>Evergreen Jade</h4></div>
+                                <img class="img-responsive" src="img/4.JPG">
+                            </a>  
+                        </div>
+                        <br>
+                        <div class="row">
+                            <a href="#" class="relative">
+                                <div class="jump"><h4>Tibetan Antelope Horn</h4></div>
+                                <img class="img-responsive" src="img/35.JPG">
+                            </a>  
+                        </div>
                     </div>
-                    <div class="col-sm-7">
-                        <div class="row box2">Lorem Upsum</div>
-                        <div class="row box3">Lorem Epsum</div>
+                    <div class="col-sm-6">
+                        <a href="jade.html" class="relative">
+                            <div class="jump"><h4>Cave Jade</h4></div>
+                            <img class="img-responsive" src="img/42.JPG">
+                        </a>  
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">Lorem Bosum<br><br><br></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-7">
-                        <div class="row box2">Lorem Upsum</div>
-                        <div class="row box3">Lorem Epsum</div>
-                    </div>
-                    <div class="col-sm-5 box1">
-                        <a href="#"><img class="img-responsive" src="img/42.JPG"></a>  
-                    </div>
+                    <div class="col-sm-1"></div> <!-- empty space -->
                 </div>
             
                 <footer>What's in the footer?</footer>
             </div>
+            
             <script src="js/jquery-2.2.4.js"></script>
             <script src="js/jquery-ui.js"></script>
             <script src="js/bootstrap.js"></script>
+            <script>
+            
+                $(document).ready(function(){
+                    $('.relatve').mouseenter(function() {
+                        $('.jump').animate({
+                        height: '+=30px'
+                    });
+                    $('.relative').mouseleave(function() {
+                        $('.jump').animate({
+                        height: '-=30px'
+                    }); 
+                });
+                
+            </script>
         </body>
     </html>
 </idoctype>

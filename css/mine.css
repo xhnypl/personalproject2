@@ -1,16 +1,17 @@
-.box1 {
-
+#crystalsale {
+    border: dashed white;
+    text-align: center;
+    font-family: verdana;
 }
 
-.box2 {
-    background-color: beige;
-    height: 150px;
-
+.relative {
+    position: relative;
 }
 
-.box3 {
-    background-color: coral;
-    height: 150px;
-
+.jump {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
 }
-
